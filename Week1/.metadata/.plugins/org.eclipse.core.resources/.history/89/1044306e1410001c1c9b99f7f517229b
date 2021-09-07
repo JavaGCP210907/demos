@@ -1,0 +1,17 @@
+package com.revature;
+
+public class Launcher {
+
+	//This is a comment
+	
+	//This is our main method - the entry point to our application
+	public static void main(String[] args) {
+		
+		//the code inside a method is called the method body
+		
+		//This is a print statement - it prints a message to your console
+		System.out.println("Hello World!");
+		
+	}
+	
+}

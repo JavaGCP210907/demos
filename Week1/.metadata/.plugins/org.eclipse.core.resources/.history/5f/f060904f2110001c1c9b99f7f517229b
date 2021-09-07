@@ -1,0 +1,38 @@
+package com.revature;
+
+public class Launcher {
+
+	//shortcut to auto-generate main method: type "main" and then ctrl + space
+	public static void main(String[] args) {
+		
+		System.out.println("=================================================(Integer Primitives)");
+		
+		//These first 5 primitives we'll see are integers - whole numbers, no decimals.
+		
+		byte b = 1; //bytes are one byte in size, from -128 to 127 
+		System.out.println(b); //we're printing the value of b
+		
+		short s = 300; //shorts are 2 bytes in size, from -32768 to 32767
+		System.out.println(s);
+		
+		int i = 20000; //4 bytes in size, from -214783648 to 214783647
+		System.out.println(i);
+		
+		long l = 9000000000000000000L; //8 bytes in size from very low to very high
+		System.out.println(l);
+		
+		//chars will always be written in single quotes
+		char c = 'a'; //2 bytes in size
+		char c2 = 18;
+		char c3 = '$';
+		System.out.println(c);
+		System.out.println(c2);
+		System.out.println(c3);
+		
+		System.out.println(Character.MIN_VALUE);
+		System.out.println(Character.MAX_VALUE);
+		
+		
+	}
+	
+}
