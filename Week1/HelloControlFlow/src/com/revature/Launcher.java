@@ -62,9 +62,33 @@ public class Launcher {
 		//The loop executed 10 (0-9) times. Once i = 10, the loop completes and doesn't execute it's code again
 		
 		
-		//I'm gonna add a more interesting use of for loops and an if statement below----------
+		//I'm gonna add a more interesting use of for loops and an if statement below with break/continue----------
 		
+		//This is an Array, which we'll talk more about. 
+		char[] myName = {'B', 'E', ' ', 'N', 'A', 'A', 'A'};
 		
+		System.out.println(myName); //print the array as it, without processing
+		
+		//now let's use some control flow statements to print only the chars in the Array that we want (BEN)
+		
+		for(int i = 0; i < myName.length; i++) { //.length returns the length of the Array as an int. Very useful.
+		
+			if(myName[i] == ' ') {
+				continue;
+				//if the char at position i == ' ', skip the current iteration of the loop
+			}
+			
+			if(myName[i] == 'A') {
+				break;
+				//if the char at position i == 'A', break (end) the loop.
+			}
+			
+			System.out.println(myName[i]); //if none of the if statements run, the char as position i will print
+			
+		}
+		
+		System.out.println(myName); //note that the actual Array isn't affected by any of this! 
+		//we're simply printing the values of the Array that we want, based on some control flow statements
 		
 	}
 
