@@ -58,6 +58,8 @@ public class Launcher {
 			e.printStackTrace();
 		}
 
+		//exceptions are getting caught, and we get error messages because of e.printstacktrace
+		//but because try/catch blocks HANDLE exceptions, our application does not crash.
 		
 	}
 
