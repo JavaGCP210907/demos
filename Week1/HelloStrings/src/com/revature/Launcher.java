@@ -1,5 +1,7 @@
 package com.revature;
 
+import java.util.Scanner;
+
 public class Launcher {
 
 	public static void main(String[] args) {
@@ -74,11 +76,43 @@ public class Launcher {
 		
 		System.out.println("=============================================(StringBuilder)");
 		
+		StringBuilder sb = new StringBuilder(pangram); //instantiate a new StringBuilder object based on our pangram String
 		
 		
+		//perform mutations on our StringBuilder
+		sb.reverse(); //reverse the characters
+		sb.append("BENJAMIN"); //append my name to the back of the StringBuilder
+		sb.insert(12, "PATRICK"); //insert Patrick's name to index 12
+		sb.delete(20, 27); //delete values of index 20-27
+		sb.replace(0, 7, s5); //replace a substring with some other String
+		
+		System.out.println(sb); //what even is this
+		
+		//Note that every method we ran on sb actually changed the object!!
+		//StringBuilder is mutable, unlike Strings
 		
 		System.out.println("=============================================(Scanner)");
 		
+		//create a Scanner Object
+		Scanner scan = new Scanner(System.in); //System.in represents the console
+		
+		System.out.println("What's your name?"); //ask the user a question
+		
+		String name = scan.nextLine(); //the nextLine() method gathers a user input STRING and moves to the next line
+		
+		System.out.println(name + " huh?... Lovely name bro"); //now we can use the variable holding the user input
+		
+		
+		System.out.println("How old are you?");
+		
+		int age = scan.nextInt(); //nextInt() will grab the int, but doesn't make a new line...
+		scan.nextLine(); //we need to explicitly call nextLine() in order to actually move to the next line
+		
+		System.out.println("What?!?!?! " + age + "?? What's your secret?");
+		
+		String secret = scan.nextLine();
+		
+		System.out.println("OK starting tomorrow I'll " + secret);
 		
 	}
 	
