@@ -49,7 +49,10 @@ public class Launcher {
 		
 		//this is legal because a Buggy will always be a Car
 		
-		System.out.println(coolBuggy.drive(345534));
+		System.out.println(coolBuggy.drive(345534)); //coolBuggy is of type car, 
+													 //BUT the Buggy-specific version of drive() gets used
+		
+		//System.out.println(coolBuggy.punchSomeone()); //coolBuggy is of type Car... so the punchSomeone() doesn't exist
 		
 		//talking about downcasting-----------------------------------------
 		
@@ -66,7 +69,7 @@ public class Launcher {
 		
 		Buggy newerBuggy = (Buggy)newBuggy; //also a somewhat valid reason to use downcasting  
 		
-		//some experimentation below......
+		
 		
 	}
 
