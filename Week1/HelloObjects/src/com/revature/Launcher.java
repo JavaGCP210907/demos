@@ -69,7 +69,7 @@ public class Launcher {
 		
 		Buggy newerBuggy = (Buggy)newBuggy; //also a somewhat valid reason to use downcasting  
 		
-		
+		String sdadsa = "skldaslkja";
 		
 	}
 
