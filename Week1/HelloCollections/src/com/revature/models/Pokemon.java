@@ -7,7 +7,9 @@ public class Pokemon {
 	private String name;
 	private String type;
 
-	
+	public void fight() {
+		System.out.println(this.name + " attacked!");
+	} 
 	
 	
 	//Some boilerplate code below---------------------------------------------------
@@ -52,8 +54,15 @@ public class Pokemon {
 
 	public void setType(String type) {
 		this.type = type;
-	} 
+	}
+
 	
+	//toString() returns a String representation of the Object when we attempt to print it.
+	//This is how we get any object's fields as Strings, instead of a memory address
+	@Override
+	public String toString() {
+		return "Pokemon [name=" + name + ", type=" + type + "]";
+	}
 	
 	
 }
