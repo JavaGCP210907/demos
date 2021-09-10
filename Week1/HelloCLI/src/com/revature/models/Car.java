@@ -1,6 +1,5 @@
 package com.revature.models;
 
-//Let them choose the object we work with - 
 //as long as it can have a similar relationship to Car/CarDealership
 
 //Remember - in your Project 0, the CarDealership will be the database and the Cars will be pieces of data

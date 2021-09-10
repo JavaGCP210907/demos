@@ -47,8 +47,6 @@ public class CarDealership implements CarDealershipInterface{
 	}
 	
 	
-	//TAKE HOME PROBLEM!!! Get them to implement this method on their own, and add a CLI option to call it.
-	//This is a sort of hard problem if you don't have much Java experience. We'll talk about it tmrw!
 	public void getCarsByColor(String color) {
 		
 	
