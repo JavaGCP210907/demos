@@ -3,7 +3,9 @@ package com.revature;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 import com.revature.models.Pokemon;
 
@@ -89,9 +91,30 @@ public class Launcher {
 				
 		System.out.println("=============================================(Maps)");
 		
+		//New Map, in order to map trainers to Pokemon
+		Map<String, Pokemon> trainers = new TreeMap<>();
+		
+		//put some key/value pairs into out map with .put()
+		trainers.put("Freddie", new Pokemon("mudkip", "water"));
+		trainers.put("Peter", new Pokemon("porygon", "normal"));
+		trainers.put("Evan", new Pokemon("mudkip", "water"));
+		
+		//Just to see what it looks like to print out a map
+		System.out.println(trainers);
+		//TreeMaps niche, is that they have sorted keys... In this case, Strings are sorted alphabetically
 		
 		
+		//New Map with ints as keys... rememeber Collections (and Maps) only work with objects
+		//we can't use int here... we need to use a WRAPPER CLASS... Integer in this case
+		//a wrapper class is an Object representation of a primitive
+		Map<Integer, Pokemon> pokemonIds = new TreeMap<>();
 		
+		pokemonIds.put(1, new Pokemon("gengar", "poison/ghost"));
+		pokemonIds.put(2, new Pokemon("poliwag", "water"));
+		pokemonIds.put(3, new Pokemon("eevee", "normal"));
+				
+		System.out.println(pokemonIds);
+		//again, notice the keys are sorted... this time by increasing numerical value
 		
 	}
 
