@@ -33,4 +33,6 @@ public abstract class Person implements Walkable {
 		this.phobia = phobia;
 	} 
 	
+	
+	
 }

@@ -69,7 +69,23 @@ public class Launcher {
 		
 		Buggy newerBuggy = (Buggy)newBuggy; //also a somewhat valid reason to use downcasting  
 		
-		String sdadsa = "skldaslkja";
+		
+		
+		
+		//messing around with changing the object of a final variable (which you CAN do)--------------
+		
+		final Car funnyCar = new Car();
+		
+		System.out.println(funnyCar.tires); //this will be the default value of tires (given in the no args constructor)
+		
+		funnyCar.tires = 50; //this is legal! funnyCar is final, so its cannot change...
+							 //BUT the object it's referencing CAN still have its fields changed
+		
+		System.out.println(funnyCar.tires); //changed successfully
+		
+		//note, we can't change funnyCar's reference to be null. thus the Car it's referencing can't get garbage collected
+		
+		
 		
 	}
 
