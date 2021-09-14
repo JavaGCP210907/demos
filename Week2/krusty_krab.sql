@@ -80,6 +80,25 @@ SELECT count(DISTINCT hire_date) FROM employees; --how many different hire dates
 --For the most part, we use these with aggregate functions
 
 
+--GROUP BY lets us combine records based on equivalent values
+SELECT role_salary, count(role_id)
+FROM roles GROUP BY role_salary; --retrieves salaries and counts of each salary
+--the salary rows have been combined, and we also add the count of each in the returned row
+
+
+SELECT hire_date, count(employee_id)
+FROM employees GROUP BY hire_date ORDER BY count(employee_id); --retrieves count of each hire date
+--we also ordered by the count of employee_ids this time
+
+--HAVING behaves like WHERE, but it's only used with aggregate functions
+
+--select roles with more than one employee
+SELECT role_id, count(employee_id)
+FROM employees GROUP BY role_id HAVING count(employee_id) > 1;
+
+--select salaries assigned to 2 or more roles
+SELECT role_salary, count(role_id)
+FROM roles GROUP BY role_salary HAVING count(role_id) >= 2; 
 
 
 
