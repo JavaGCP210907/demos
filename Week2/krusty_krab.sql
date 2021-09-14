@@ -45,6 +45,40 @@ SELECT * FROM employees;
 
 --I want to demonstrate functions, group by, having, limit, and aliases
 
+--scalar functions: upper, lower, length, now
+
+SELECT upper(role_title) FROM roles; --upper returns data in all caps... lower works in the opposite way
+
+SELECT l_name, length(l_name) FROM employees; --length returns an int of the length of value
+
+SELECT f_name FROM employees WHERE length(f_name) > 8; --just for practice, returns names longer than 8 characters
+
+SELECT now(); --just kind of cool, returns a current timestamp
+
+
+--aggregate functions: avg, max, min, sum, count
+
+SELECT avg(role_salary) FROM roles;
+
+SELECT sum(role_salary) FROM roles;
+
+SELECT min(f_name) FROM employees; --text data types go from A being minimum
+
+SELECT max(hire_date) FROM employees; --date data types go from the latest date being the maximum
+
+--(of course you can use min and max for int types as well)
+
+SELECT count(employee_id) FROM employees; --how many employees are there?
+--I like to use the primary key to count on, but you can use any column
+
+--slight aside, the DISTINCT keyword will ignore any duplicate values
+SELECT count(DISTINCT hire_date) FROM employees; --how many different hire dates are there?
+
+--NOTE: count will NOT count null values... maybe a good reason as to why we tend to count on the primary key
+
+--Now let's explore using GROUP BY and HAVING-----------------------
+--For the most part, we use these with aggregate functions
+
 
 
 
