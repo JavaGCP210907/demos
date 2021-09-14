@@ -113,5 +113,24 @@ SELECT * FROM dogs ORDER BY age; --ascending order by default, can specify "asc"
 
 SELECT * FROM dogs ORDER BY age desc; --you have to specify if you want descending order 
 
+---------------------------------------------------------------------------------------
+
+--We can also UPDATE values in our tables
+--Be careful!! You should ALWAYS use a WHERE clause, or else every row will change
+
+--update Sparky's age to be 14. without the WHERE, this would change every age
+UPDATE dogs SET age = 14 WHERE name = 'Sparky';
+--order matters, we usually want WHERE after we specify what we're choosing data from, operating on.
+
+--increment every dog's age by 1
+UPDATE dogs SET age = age + 1;
+
+
+--Finally, we can DELETE rows. I usually don't do this, when you persist data to a database, it's usually there to stay
+--but there are always cases where delete can be useful - maybe a user deactivates their account or something
+
+--Like with update, remember to always use a WHERE clause or everything will go
+
+DELETE FROM dogs WHERE name = 'Fido'; --this will delete fido :( goodbye fido
 
 
