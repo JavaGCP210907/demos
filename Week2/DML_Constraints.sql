@@ -78,7 +78,40 @@ SELECT name, age, owner_id FROM dogs; --return these three columns only
 --ALTER SEQUENCE dogs_dog_id_seq RESTART WITH 4615793;
 --we can start out serial ids from a specific number like this^
 
---Let's explore the WHERE clause
+--Let's explore the WHERE clause-------------------------------------------------------------------
+
+--There are a lot of operators we can use with WHERE, all of which filter data differently
+
+--dogs who are yorkies (=)
+SELECT * FROM dogs WHERE breed = 'Yorkie';
+
+--as you can assume, != works in the opposite way
+SELECT * FROM dogs WHERE breed != 'Yorkie';
+
+--dogs younger than 8 (<)
+SELECT * FROM dogs WHERE age < 8;
+
+--dogs with names that start with M (like) (%)
+SELECT * FROM dogs WHERE name LIKE 'M%'; --nothing after M matters, it can be anything (wildcard)
+
+--dogs with names that end in x (like) (%)
+SELECT * FROM dogs WHERE name LIKE '%x';
+
+--dogs who weigh between 20-200 pounds (between) (and)
+SELECT * FROM dogs WHERE weight BETWEEN 50.65 AND 140.55; --with between, the bounds ARE included
+
+--dogs who are Yorkies or Labs (or) (in)
+SELECT * FROM dogs WHERE breed = 'Yorkie' OR breed = 'Lab'; --(expression) or (expression)
+SELECT * FROM dogs WHERE breed IN ('Yorkie', 'Lab'); --checks if the column is within an array of values
+
+--dogs who are NOT Yorkies or Labs (not in)
+SELECT * FROM dogs WHERE breed NOT IN ('Yorkie', 'Lab');
+
+--Also important is the ORDER BY keyword, which lets us return our data in a certain order
+
+SELECT * FROM dogs ORDER BY age; --ascending order by default, can specify "asc" if you want
+
+SELECT * FROM dogs ORDER BY age desc; --you have to specify if you want descending order 
 
 
 
