@@ -1,11 +1,17 @@
 package com.revature.models;
 
+import java.util.List;
 import java.util.Scanner;
+
+import com.revature.dao.EmployeeDao;
 
 //This Menu Class will have a method that displays a menu to the user that they can interact with
 //Through this menu, the user can give inputs that will interact with the database
 public class Menu {
 
+	EmployeeDao eDao = new EmployeeDao(); //so we can use the EmployeeDao methods
+	
+	
 	//All of the manu display options and control flow are contained within this method
 	public void displayMenu() {
 		
@@ -45,7 +51,14 @@ public class Menu {
 			}
 			
 			case "employees": {
-				//nothing here yet!!!
+				
+				//get the List of employees from the DAO layer
+				List<Employee> employees = eDao.getEmployees();
+				
+				//BEN - make this an enhanced for loop********************************************
+				System.out.println(employees);
+				
+				break;
 			}
 			
 			case "exit": {

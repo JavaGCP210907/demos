@@ -20,6 +20,8 @@ public class Launcher {
 			System.out.println("HEY connection failed :(");
 			e.printStackTrace();
 		}
+		//THIS IS CALLED A "TRY WITH RESOURCES BLOCK"
+		
 		
 		//Here is the actual functionality of our application----------------
 		
