@@ -14,7 +14,7 @@ public class ConnectionUtil {
 		//For compatibility with other technologies/frameworks, we'll need to register our PostgreSQL driver
 		//This process makes the application aware of what Driver class we're using
 		try {
-			Class.forName("org.postgres.Driver"); //searching for the postgres driver, which we have as a dependency
+			Class.forName("org.postgresql.Driver"); //searching for the postgres driver, which we have as a dependency
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace(); //This tells in the console us what went wrong
 		}
@@ -33,14 +33,5 @@ public class ConnectionUtil {
 		return DriverManager.getConnection(url, username, password);
 		
 	}
-	
-	
-	
-	
-	
-
-
-	
-	
 	
 }
