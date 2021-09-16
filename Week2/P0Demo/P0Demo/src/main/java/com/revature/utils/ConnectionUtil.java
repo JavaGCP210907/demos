@@ -20,7 +20,7 @@ public class ConnectionUtil {
 			System.out.println("problem occurred locating driver");
 		}
 		
-		
+	/*	
 		//Use our database credentials to establish a database connection
 		//Hardcoded for now... BAD! we'll change this later to hide them in the Environment Variables
 		
@@ -31,6 +31,17 @@ public class ConnectionUtil {
 		
 		//This return statement is what returns out actual database Connection object
 		//Note how this getConnection() method has a return type of Connection
+		return DriverManager.getConnection(url, username, password);
+	*/	
+		
+		
+		//These variables holding my DB credentials are hidden in my Environment Variables
+		//Run -> Run Configurations -> Environment -> Then create key/value pairs for these credentials
+		//You may have to stretch out the window to see the "environment" option
+		String url = System.getenv("URL");
+		String username = System.getenv("USERNAME");
+		String password = System.getenv("PASSWORD");
+		
 		return DriverManager.getConnection(url, username, password);
 		
 	}

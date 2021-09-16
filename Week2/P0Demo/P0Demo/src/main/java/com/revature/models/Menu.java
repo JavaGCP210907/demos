@@ -3,6 +3,9 @@ package com.revature.models;
 import java.util.List;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.dao.EmployeeDao;
 import com.revature.dao.RoleDao;
 
@@ -12,6 +15,7 @@ public class Menu {
 
 	EmployeeDao eDao = new EmployeeDao(); //so we can use the EmployeeDao methods
 	RoleDao rDao = new RoleDao(); //so we can use the RoleDao methods
+	Logger log = LogManager.getLogger(Menu.class); //Logger object so that we can implement Logging
 	
 	//All of the manu display options and control flow are contained within this method
 	public void displayMenu() {
@@ -64,6 +68,8 @@ public class Menu {
 				for(Employee emp : employees) {
 					System.out.println(emp);
 				}
+				
+				log.info("USER RETRIEVED LIST OF ALL EMPLOYEES");
 				
 				break;
 			}
@@ -136,6 +142,8 @@ public class Menu {
 				scan.nextLine();
 				
 				eDao.removeEmployee(id);
+				
+				log.warn("USER DELETED EMPLOYEE " + id);
 				
 				break;
 			}
