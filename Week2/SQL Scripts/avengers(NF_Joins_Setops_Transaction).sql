@@ -179,5 +179,38 @@ SELECT home_base FROM homes EXCEPT SELECT home_base_fk FROM avengers;
 
 
 
-
+-------------------------------------------------------------------------------------(Transaction and TCL)
 	  
+--A transaction is a group of SQL statements that execute together. If one fails, they all fail and get rolled back
+
+--some setup for the transaction
+
+ALTER TABLE avengers ADD COLUMN active boolean;
+ALTER TABLE avengers ALTER COLUMN active SET DEFAULT TRUE;
+
+TRUNCATE TABLE avengers;
+
+--NOW, we'll make a simple transaction
+
+BEGIN; --transaction starts
+
+INSERT INTO avengers (hero_name, hero_power, f_name, l_name, home_base_fk)
+VALUES ('Hulk', 'In Touch with his Emotions', 'Bruce', 'Banner', 'Avengers Tower'),
+	   ('Black Panther', 'Neva Freezes', 'T''chala', 'Panther', 'Avengers Tower');
+	  
+UPDATE avengers SET active = FALSE WHERE hero_name = 'Hulk';
+UPDATE avengers SET active = FALSE WHERE hero_name = 'Black Panther';
+
+--SELECT * FROM fake_table;
+--this would cause the transaction to fail - we would have to use rollback in order to keep using the database
+
+COMMIT; --transaction ends 
+
+SELECT * FROM avengers;
+
+ROLLBACK; 
+--until you rollback OR commit the transaction, everything else you try to do in the database will be blocked
+--until you either undo the transactions changes, or successfully finish the transaction.
+
+
+
