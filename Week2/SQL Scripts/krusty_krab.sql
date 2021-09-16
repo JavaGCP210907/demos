@@ -100,6 +100,3 @@ FROM employees GROUP BY role_id HAVING count(employee_id) > 1;
 SELECT role_salary, count(role_id)
 FROM roles GROUP BY role_salary HAVING count(role_id) >= 2; 
 
-
-
-
