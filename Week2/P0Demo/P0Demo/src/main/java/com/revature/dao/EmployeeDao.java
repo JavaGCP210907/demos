@@ -193,7 +193,28 @@ public class EmployeeDao implements EmployeeDaoInterface {
 			//we need to join employees to roles in order to access the role_title column and return employees
 			//since I want to get employees based on something found in the roles table, we need a join 
 			
-			//REST TO BE ADDED--------------------
+			PreparedStatement ps = conn.prepareStatement(sql);
+
+			ps.setString(1, title); //insert the method's argument as the first (and only) variable in the query
+			
+			rs = ps.executeQuery();	
+			
+			List<Employee> employeeList = new ArrayList<>();
+			
+			while(rs.next()) { //while there are results in the result set...
+				
+				Employee e = new Employee( //create a new Employee Object from each returned row..
+						rs.getInt("employee_id"),
+						rs.getString("f_name"),
+						rs.getString("l_name"),
+						rs.getString("hire_date"),
+						rs.getInt("role_id")
+						);
+				
+				employeeList.add(e); //and populate the ArrayList with each created Role Object
+			}
+			
+			return employeeList; //Finally, return the populated List of Roles.
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -36,6 +36,7 @@ public class Menu {
 			System.out.println("hi -> get greeted");
 			System.out.println("employees -> show all employees");
 			System.out.println("employeesByID -> get employees with a certain role");
+			System.out.println("employeesByTitle -> get employees of a certain title");
 			System.out.println("addEmployee -> add a new employee");
 			System.out.println("deleteEmployee -> delete an employee");
 			System.out.println("updateSalary -> update the salary of a role");
@@ -84,6 +85,21 @@ public class Menu {
 				}
 				
 				break;
+			}
+			
+				case "employeebytitle": {
+				
+				System.out.println("Enter Employee Role to Search: (Case Sensitive! e.g. \"Fry Cook\")");
+				String roleInput = scan.nextLine(); //get user's input for Role to search by
+				
+				List<Employee> employees = eDao.getEmployeesByRoleTitle(roleInput); //get the List of Employees from the dao
+				
+				for(Employee e : employees)
+				{
+					System.out.println(e); //print them out one by one via the enhanced for loop
+				}
+				break;				
+				
 			}
 			
 			case "addEmployee": {

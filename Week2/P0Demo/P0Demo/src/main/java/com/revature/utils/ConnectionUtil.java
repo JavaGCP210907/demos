@@ -17,6 +17,7 @@ public class ConnectionUtil {
 			Class.forName("org.postgresql.Driver"); //searching for the postgres driver, which we have as a dependency
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace(); //This tells in the console us what went wrong
+			System.out.println("problem occurred locating driver");
 		}
 		
 		
