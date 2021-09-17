@@ -36,5 +36,53 @@ public class DinoController {
 		ctx.status(200); //200 = success
 		
 	};
+
+	public Handler GetDinoByIdHandler = (ctx) -> {
+		
+		//take the given path parameter (id) and parse it into an int
+		int id = Integer.parseInt(ctx.pathParam("id"));
+		
+		//get the requested dino using the appropriate dao method
+		Dinosaur dino = dDao.getDinoById(id);
+		
+		//BEN WILL TURN THIS INTO A TRY CATCH FOR ARRAYINDEXOUTOFBOUNDEXCEPTION
+		
+		if(dino == null) { //if no dino is associated with the given id, do the following...
+			
+			ctx.result("Dino not found!"); //send back error message
+			ctx.status(404); //set "not found" status code
+			
+		} else { //otherwise, turn the dino into Json, and send it back to the user with ctx.result()
+			
+			Gson gson = new Gson();
+			
+			String JSONDino = gson.toJson(dino); //dino object from line 46
+			
+			ctx.result(JSONDino);
+			
+			ctx.status(200);
+			
+		}	
+	};
+
+	public Handler createDinoHandler = (ctx) -> {
+		
+		String body = ctx.body(); //the "body" will contain JSON with the dino information. Turn it into a String
+								  //"body" refers to the body of the HTTP request
+		
+		Gson gson = new Gson();
+		
+		Dinosaur dino = gson.fromJson(body, Dinosaur.class); //turn the above JSON String into a Java Dinosaur Object
+		
+		dDao.inputDino(dino); //send the newly created Dinosaur into the DAO
+		
+		ctx.status(201); //201 = "created"
+		
+	};
+	
+	
+	
+	//BEN WILL MAKE A DELETE DINO HANDLER
+	
 	
 }

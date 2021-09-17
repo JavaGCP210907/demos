@@ -25,6 +25,15 @@ public class Launcher {
 		app.get("/dinos", dc.getAllDinosHandler);
 		
 		
+		//GET /dinos/(id number) => return the dino of a specific ID
+		//this uses a PATH PARAMETER, whatever the user enters for the variable is what will get sent to the Handlers
+		app.get("/dinos/:id", dc.GetDinoByIdHandler);
+		
+		
+		//POST requests sent to /dinos => create a new dino
+		app.post("/dinos", dc.createDinoHandler);
+		
+		//BEN WILL ADD FUNCTIONALITY FOR DELETE
 		
 		
 		
