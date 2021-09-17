@@ -42,17 +42,12 @@ public class DinoController {
 		//take the given path parameter (id) and parse it into an int
 		int id = Integer.parseInt(ctx.pathParam("id"));
 		
-		//get the requested dino using the appropriate dao method
-		Dinosaur dino = dDao.getDinoById(id);
+		//this try/catch isn't fully necessary, but it's a nice exception handling touch...
 		
-		//BEN WILL TURN THIS INTO A TRY CATCH FOR ARRAYINDEXOUTOFBOUNDEXCEPTION
-		
-		if(dino == null) { //if no dino is associated with the given id, do the following...
+		try { //try to turn the dino into JSON, and send it back to the user with ctx.result()
 			
-			ctx.result("Dino not found!"); //send back error message
-			ctx.status(404); //set "not found" status code
-			
-		} else { //otherwise, turn the dino into Json, and send it back to the user with ctx.result()
+			//get the requested dino using the appropriate dao method
+			Dinosaur dino = dDao.getDinoById(id);
 			
 			Gson gson = new Gson();
 			
@@ -61,10 +56,18 @@ public class DinoController {
 			ctx.result(JSONDino);
 			
 			ctx.status(200);
+
+			
+		} catch(ArrayIndexOutOfBoundsException e) { //otherwise, 
+			
+			ctx.result("Dino ID not found!"); //send back error message
+			ctx.status(400); //set "bad request" status code
+			//note that you can set the status code to whatever you want... this could be a 404/401/403 and function the same
 			
 		}	
 	};
 
+	
 	public Handler createDinoHandler = (ctx) -> {
 		
 		String body = ctx.body(); //the "body" will contain JSON with the dino information. Turn it into a String
@@ -81,8 +84,25 @@ public class DinoController {
 	};
 	
 	
-	
-	//BEN WILL MAKE A DELETE DINO HANDLER
+	public Handler deleteDinoByIdHandler = (ctx) -> {
+		
+		int id = Integer.parseInt(ctx.pathParam("id")); //take the given path param (id) and parse it into an int
+		
+		Dinosaur[] newArr = dDao.deleteDinoById(id);	
+        	
+		//the below code is optional for delete functionality... can you tell what it does?
+		
+		//it sends back the new array of dinos (minus the deleted one) back to the client.
+		
+        Gson gson = new Gson();
+        
+        String JSONDinoArr = gson.toJson(newArr);
+        
+        ctx.result(JSONDinoArr);
+        
+        ctx.status(200);
+		
+	};
 	
 	
 }

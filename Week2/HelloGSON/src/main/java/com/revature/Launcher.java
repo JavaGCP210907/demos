@@ -33,10 +33,10 @@ public class Launcher {
 		//POST requests sent to /dinos => create a new dino
 		app.post("/dinos", dc.createDinoHandler);
 		
-		//BEN WILL ADD FUNCTIONALITY FOR DELETE
+	    //DELETE /dinos/(id number) => delete the dino of a specific ID
+        app.delete("/dinos/:id", dc.deleteDinoByIdHandler);
 		
-		
-		
+	
 	}
 	
 }
