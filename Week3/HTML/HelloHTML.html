@@ -1,0 +1,120 @@
+<!DOCTYPE html> <!-- doctype declaration (not actually a tag - declares what kind of doc we're writing) -->
+<html> <!-- root tag, all our HTML goes in here -->
+
+<head> <!-- The head is typically reserved for metadata -->
+    <title>HelloHTML</title> <!-- The title tag lets you change what is displayed in the tab -->
+</head>
+
+<body> <!-- The actual content of the webpage goes in here -->
+
+<h1>Hello HTML</h1> <!-- h1 is the largest header tag -->
+
+<p>I just built my own webpage!</p> <p>I'm a front end developer now!</p>
+<!-- Despite me writing these paragraph elements in the same line, they render on different lines -->
+<!-- This is because paragraphs are block elements!! Not inline elements -->
+
+<br>
+<br> <!-- Line breaks create a line of empty space -->
+
+<div> <!-- divs are your general division tags, dividing up parts of the webpage -->
+    <span> I want multiple blocks displaying on the same line... </span>
+    <span>Better use a span!!</span> <span>spans are general use inline elements</span>
+</div>
+
+<!-- Messing with tables----------------------------------------------------- -->
+
+<br>
+<br>
+
+<table>
+    <thead>
+        <tr> <!-- A row in the head -->
+            <th>Name</th> <!-- Cell data for header rows -->
+            <th>Favorite Animal</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Jamie</td>
+            <td>Chinchilla</td>
+        </tr>
+        <tr>
+            <td>Djetry</td>
+            <td>Jaguar</td>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <td>Sugar Glider</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Messing with Lists--------------------------------------------------- -->
+
+<br>
+
+<div>
+
+    <h2>Ben's Favorite Animals</h2>
+
+    <ol> <!-- Ordered list -->
+        <li>Capybara</li> <!-- List item -->
+        <li>Dog</li>
+        <li>Axolotl</li>
+
+        <h3>Honorable Mentions</h3> <!--nested header -->
+
+        <ul> <!-- Nested unordered list -->
+            <li>Hippo</li>
+            <li>Fennec Fox</li>
+        </ul>
+    </ol>
+
+</div>
+
+<!-- Creating a form --------------------------------------------------- -->
+
+<br>
+
+<form>
+
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Ex: John Smith">
+    <!-- the "for" attribute of the label tag is looking to an id to match-->
+    <!--In other words, it's looking for a unique identifier to put the label over-->
+
+    <br>
+
+    <p>You Must Choose:</p>
+
+    <input type="radio" id="choice1" name="radio">
+    <label for="choice1">I will choose</label>
+
+    <input type="radio" id="choice2" name="radio">
+    <label for="choice2">I will NOT choose</label>
+
+    <br>
+
+    <p>How do you feel about your decision?</p>
+
+    <input type="checkbox" id="choice1" name="checkbox">
+    <label for="choice1">Overjoyed</label>
+
+    <input type="checkbox" id="choice2" name="checkbox">
+    <label for="choice2">Somber</label>
+
+    <input type="checkbox" id="choice3" name="checkbox">
+    <label for="choice3">Pensive</label>
+
+    <input type="checkbox" id="choice4" name="checkbox">
+    <label for="choice4">Indifferent</label>
+
+</form>
+
+
+</body>
+
+
+
+</html>
