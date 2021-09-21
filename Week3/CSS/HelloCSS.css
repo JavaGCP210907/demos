@@ -1,0 +1,19 @@
+/* THIS is a comment in CSS */
+/* ctrl + / to autogenerate comment syntax in VScode */
+
+/* * is how we achieve universal styling */
+*{
+    background-color: salmon;
+}
+
+/* :hover mean that styling gets applied when you hover over the selected element */
+#myHeader:hover {
+    transform: rotate(0.25turn);
+    text-align: right;
+    color:darkturquoise;
+    /*transform: matrix(50,50,50,50,50,50);*/
+    
+}
+
+
+/* Remember, for this external stylesheet to style your HTML, you have to LINK to it in your HTML */

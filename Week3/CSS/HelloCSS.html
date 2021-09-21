@@ -1,0 +1,162 @@
+<!DOCTYPE html> <!-- ! and enter will autogenerate an HTML skeleton for you-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloCSS</title>
+
+    <!-- ctrl + / is the shortcut for comments BTW -->
+
+    <!--This is how we can link to our external stylesheet (best practice for CSS styling)-->
+    <link rel="stylesheet" href="HelloCSS.css">
+
+    <!-- This is a link to a bootstrap stylesheet, which will basically set a premade style for your page -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+
+        /*ID selector - applies this styling to every element with ID = "p1" */
+        #p1{
+            font-family: fantasy;
+            font-style: italic;
+            font-size: 35mm;
+            font-weight: bold;
+        }
+
+        /*Class selecter - applies this styling to every element with class = "myTable"*/
+        .myTable{
+            border: 3px dotted dodgerblue;
+        }
+
+        /*element selector - applies this styling to each of a given element*/
+        /*NOTE: specificity rules... the styling for .myTable overrides the styling for table*/
+        table {
+            border: 3px dashed rgb(98, 197, 32);
+            padding: 3px 5px;
+        }
+
+    </style>
+
+</head>
+
+<body> <!-- The actual content of the webpage goes in here -->
+
+    <h1 id="myHeader">Hello HTML</h1> <!-- h1 is the largest header tag -->
+    
+    <p id="p1">I just built my own webpage!</p> <p>I'm a front end developer now!</p>
+    <!-- Despite me writing these paragraph elements in the same line, they render on different lines -->
+    <!-- This is because paragraphs are block elements!! Not inline elements -->
+    
+    <br>
+    <br> <!-- Line breaks create a line of empty space -->
+    
+    <div> <!-- divs are your general division tags, dividing up parts of the webpage -->
+        <span style="color:darkred; 
+        background-color: darkslategrey; border-style:dotted; border-color:deeppink; 
+        padding: 5px 10px 25px"
+        > I want multiple blocks displaying on the same line... </span>
+        <span>Better use a span!!</span> <span>spans are general use inline elements</span>
+    </div>
+    
+    <!-- Messing with tables----------------------------------------------------- -->
+    
+    <br>
+    <br>
+    
+    <table class="myTable">
+        <thead>
+            <tr> <!-- A row in the head -->
+                <th>Name</th> <!-- Cell data for header rows -->
+                <th>Favorite Animal</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr>
+                <td>Jamie</td>
+                <td>Chinchilla</td>
+            </tr>
+            <tr>
+                <td>Djetry</td>
+                <td>Jaguar</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Sugar Glider</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Messing with Lists--------------------------------------------------- -->
+    
+    <br>
+    
+    <div>
+    
+        <h2 style="background-color:darkgoldenrod; color:burlywood; 
+        text-align: right;">Ben's Favorite Animals</h2>
+    
+        <ol style="border-style: double; border-color: darkorchid; text-align: right;"> <!-- Ordered list -->
+            <li style="text-align: left;">Capybara</li> <!-- List item -->
+            <li style="text-align: center;">Dog</li>
+            <li>Axolotl</li>
+    
+            <h3>Honorable Mentions</h3> <!--nested header -->
+    
+            <ul> <!-- Nested unordered list -->
+                <li>Hippo</li>
+                <li>Fennec Fox</li>
+            </ul>
+        </ol>
+    
+    </div>
+    
+    <br>
+    
+    <h3>This is a fancy dark bootstrap table</h3>
+
+    <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Demonstration of the Bootstrap Grid System</h3>
+
+      <!-- I'm making some divs to demonstrate bootstrap grid system -->
+
+      <div class="row">
+          <div class="col-sm-3">I'm just a div with col-sm-3</div>
+          <div class="col-sm-3">I'm just a div with col-sm-3</div>
+          <div class="col-sm-6">I'm a BIG div with col-sm-6</div>
+          <div class="col-sm-6">I'm a div with col-sm-6 that doesn't fit inline (because of the max of 12)</div>
+          <div class="col-sm-12">I'm a div with col-sm-12 that needs its own row</div>  
+        </div>
+
+    </body>
+</html>
