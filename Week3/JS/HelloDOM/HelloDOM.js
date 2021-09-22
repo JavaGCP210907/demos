@@ -31,7 +31,7 @@ function domfunc(){
 
 //using eventlistener to handle events 
 
-//this adds a listener to our heaver element, which executes a function when moused over
+//this adds a listener to our header element, which executes a function when moused over
 document.getElementById("header").addEventListener("mouseover", hoverFunc)
 document.getElementById("header").addEventListener("mouseleave", releaseFunc)
 
