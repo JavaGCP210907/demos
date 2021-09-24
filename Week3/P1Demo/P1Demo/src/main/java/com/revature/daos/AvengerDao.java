@@ -12,6 +12,8 @@ import com.revature.utils.ConnectionUtil;
 
 public class AvengerDao implements AvengerInterface {
 
+	HomeDao hDao = new HomeDao(); //so we can use the HomeDao methods
+	
 	@Override
 	public List<Avenger> getAllAvengers() {
 		
@@ -42,14 +44,20 @@ public class AvengerDao implements AvengerInterface {
 				//if the Avenger DOES have a home...
 				if(rs.getString("home_fk") != null) {
 					
-					//use the setHome method of Avenger to set it equal to the appropriate Home object
+					//use the setHome_fk method of Avenger to set it equal to the appropriate Home object
 					//We need to use a DAO method to get a Home by its name... 
+					//the getHomeByName method gets its parameter from the home_fk column from the SQL query above
+					a.setHome_fk(hDao.getHomeByName(rs.getString("home_fk")));
 					
+					//now our Avenger object is fully initialized!
 				}
 				
+				//now we can add each new Avenger into the ArrayList
+				avengerList.add(a);
 			}
 			
-			
+			//outside our while loop, once all avengers have been added, return the avengerList
+			return avengerList;
 			
 		} catch (SQLException e) {
 			System.out.println("Get all avengers failed :(");
