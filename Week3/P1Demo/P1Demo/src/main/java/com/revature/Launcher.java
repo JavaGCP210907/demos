@@ -24,7 +24,11 @@ public class Launcher {
 		
 		
 		//.create() instantiates a Javalin object, and .start() starts the server (you can use any free port)
-		Javalin app = Javalin.create().start(8090);
+		Javalin app = Javalin.create(
+				config -> {
+					config.enableCorsForAllOrigins(); //allows the server to process JS requests from anywhere
+				}
+				).start(8090);
 		
 		//We use javalin to expose API endpoints, which HTTP can send Requests to, in order to get a Response 
 		
