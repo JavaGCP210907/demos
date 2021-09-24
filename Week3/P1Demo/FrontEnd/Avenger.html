@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers Database</title>
+    <!-- This is a link to a bootstrap stylesheet, which will basically set a premade style for your page -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!--We need a div called container to hold all the bootstrap styling-->
+   <div class="container" id="fullcontainer">
+
+    <!-- STUFF AFTER LOGIN FUNCTIONALITY GOES -->
+
+    <!--I want a table that will display all my Avenger information when it comes back from the server-->
+    <div id="table-row" class="row">
+        <!--Then we need rows inside the container to organize the data-->
+        <table id="avengerTable" class="table table-hover table-bordered table-dark">
+            <thead id="avengerHead">
+                <tr>
+                    <th>ID</th>
+                    <th>Hero Name</th>
+                    <th>Hero Power</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Power Level</th>
+                    <th>Home Name</th>
+                </tr>
+            </thead>
+            <tbody id="avengerBody">
+                <!--We'll leave this blank: it will be filled by our JS when data comes in-->
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <button id="getAvengerButton" class="btn btn-dark">Avengers Assemble!</button>
+
+   </div>
+   <script src="Avenger.js"></script>
+</body>
+</html>
