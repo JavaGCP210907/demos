@@ -1,9 +1,11 @@
 const url = "http://localhost:8090/" //putting our base URL in a variable for cleaner code below
 //eventually we'll use this in our fetch requests and make calls to the server by appending endpoints
 
-//add functionality to our button using an eventlistener
+//add functionality to our buttons using a eventlisteners
+//so when these buttons gets clicked, the appropriate function will be called
 document.getElementById("getAvengerButton").addEventListener("click", assembleFunc);
-//so when this button gets clicked, the function below will be called
+document.getElementById("loginButton").addEventListener("click", loginFunc);
+
 
 async function assembleFunc() { //async returns a promise (which fetch returns)
 
@@ -60,3 +62,17 @@ async function assembleFunc() { //async returns a promise (which fetch returns)
     }
 
 }
+
+//login functionality below-----------------
+
+//this function will send the user-inputted login credentials to our server
+async function loginFunc(){
+
+    //gather the user input from the login inputs
+    let usern = document.getElementById("username").value; 
+    let userp = document.getElementById("password").value;
+
+
+
+}
+
