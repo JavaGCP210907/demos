@@ -10,7 +10,8 @@ document.getElementById("loginButton").addEventListener("click", loginFunc);
 async function assembleFunc() { //async returns a promise (which fetch returns)
 
     //we will send a fetch request to get our avenger data
-    let response = await fetch(url + "avengers");
+    //we need to include {credentials: "include"} in order to make use of the user's cookie
+    let response = await fetch(url + "avengers", {credentials: "include"});
 
     console.log(response);
 
@@ -72,7 +73,36 @@ async function loginFunc(){
     let usern = document.getElementById("username").value; 
     let userp = document.getElementById("password").value;
 
+    //we want to send the user/pass as JSON, so we need to make a JS object to send
+    let user = {
+        username:usern,
+        password:userp
+    }
 
+    console.log(user)
+
+    //Now I'm going to set up my fetch request to the server
+    //Remember the second parameter fetch() can take?
+    //It's essentially a configuration object! the settings of our fetch request
+    //if you don't include it, it'll send a GET request by default
+    let response = await fetch(url + "login", {
+
+        method: "POST", //send a POST request
+        body: JSON.stringify(user), //turn our Javascript into JSON
+        credentials: "include"
+        //this last line will ensure that the cookie is captured
+        //future fetches will also require this "include" value to send the cookie back
+    });
+
+    console.log(response.status); //useful for debug :)
+
+    //control flow based on success or failed login
+    if(response.status === 200){
+        //wipe our login row and welcome the user
+        document.getElementById("login-row").innerText="Welcome!";
+    } else {
+        document.getElementById("login-row").innerText="Login failed! Do better."
+    }
 
 }
 

@@ -18,6 +18,8 @@ public class AvengerController {
 
 	public Handler getAllAvengersHandler = (ctx) -> {
 		
+		if(ctx.req.getSession(false) != null) { //if a session exists...
+		
 		//we create an Array with Avenger data (using the service to talk to the dao)
 		List<Avenger> allAvengers = as.getAllAvengers();
 		
@@ -30,8 +32,12 @@ public class AvengerController {
 		
 		ctx.status(200); //200 = OK (success)
 		
+		} else {
+			ctx.status(403); //forbidden status code 
+		}
+		
 	};
 
-	
+
 	
 }
