@@ -36,13 +36,20 @@ public class Launcher {
 		//GET /avengers => return all Avengers
 		app.get("/avengers", ac.getAllAvengersHandler);
 		
-		//GET avenger by id
 		
 		
-		//insert avenger into the Database (POST)
+		
+		//below are handlers I won't implement, but should give you an idea of some you may need for P1------
+		
+		//app.get("/avengers/:id", dc.getAvengerByIdHandler);
+        
+		
+        //app.post("/avengers", dc.createAvengerHandler);
+        
+		
+        //app.delete("/avengers/:id", dc.deleteAvengerByIdHandler);
 		
 		
-		//delete an avenger (DELETE)
 		
 		
 	}
