@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import com.revature.controllers.AvengerController;
+import com.revature.controllers.LoginController;
 import com.revature.utils.ConnectionUtil;
 
 import io.javalin.Javalin;
@@ -13,6 +14,7 @@ public class Launcher {
 	public static void main(String[] args) {
 		
 		AvengerController ac = new AvengerController(); //to get access to the HTTP Handlers in the controller layer
+		LoginController lc = new LoginController(); 
 		
 		//testing whether our connection works...
 		try(Connection conn = ConnectionUtil.getConnection()){
@@ -36,7 +38,9 @@ public class Launcher {
 		//GET /avengers => return all Avengers
 		app.get("/avengers", ac.getAllAvengersHandler);
 		
-		
+		//imagine we have users 
+		//Send a POST request to validate user login credentials
+		app.post("/login", lc.loginHandler);
 		
 		
 		//below are handlers I won't implement, but should give you an idea of some you may need for P1------

@@ -9,7 +9,7 @@ public class Avenger {
 	private String last_name;
 	private int power_level;
 	private Home home_fk;
-
+	
 	
 	
 	//boilerplate code below----------------------------------------
