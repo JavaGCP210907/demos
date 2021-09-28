@@ -57,11 +57,9 @@ public class MovieDao {
 		
 		Session ses = HibernateUtil.getSession();
 		
-		return (Movie)ses.merge(movie);
-		//update would throw an exception is the movie object already existed
+		return (Movie)ses.merge(movie); //have to cast, since merge() returns type Object
+		//update would throw an exception if the movie object already existed
 		//hence why I say merge is less error prone
-		
-		
 		
 	}
 	
