@@ -53,15 +53,15 @@ public class MovieDao {
 	}
 	
 	
-	public void updateMovie(Movie movie) {
+	public Movie updateMovie(Movie movie) {
 		
 		Session ses = HibernateUtil.getSession();
 		
-		ses.merge(movie);
+		return (Movie)ses.merge(movie);
 		//update would throw an exception is the movie object already existed
 		//hence why I say merge is less error prone
 		
-		HibernateUtil.closeSession();
+		
 		
 	}
 	

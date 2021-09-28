@@ -53,6 +53,9 @@ public class Launcher {
 		//finding movie by id
 		System.out.println(mDao.findMovieById(1));
 		
+		m1.setTitle("OOGAOOGAOGAOGAOGA");
+		
+		System.out.println(mDao.updateMovie(m1));
 	}
 
 }
