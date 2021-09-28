@@ -26,11 +26,16 @@ public class Movie {
 	@Column(name = "movie_genre")
 	private String genre;
 	
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL) 
 	@JoinColumn(name = "director_id") //this is how we establish relationships - the name must equal the id of Director
 	private Director director;
 	
 	//what is FetchType and CascadeType??
+	
+	//CascadeType defines how the queries will maintain Referential Integrity
+	//So in the case of CascadeType.ALL, all operations will occur when needed (DETACH, PERSIST, etc.)
+	//We tend to leave it on ALL for the most referential integrity
+	
 	
 	//FetchType defines WHEN Hibernate will go to the DB to fetch an associated object
 	//Two options: LAZY and EAGER
@@ -40,13 +45,16 @@ public class Movie {
 	 *EAGER: Hibernate returns the dependent object immediately, without using a proxy object. 
 	 *This is generally less error prone... why?
 	 *		well, if you close a Session, proxy objects aren't available anymore
-	*/
+	 */
 	
 	//What's a proxy object? Think of it as an "empty" object that gets filled only when it's needed
 	//This is good for memory management, think of it as a lightweight placeholder
 	
 	//since Director can be null, and since FetchType is set to LAZY,
 	//the Director field will have a proxy object to be filled IF there's an assocaited Director in the returned Movie
+	
+	
+	
 	
 	//boilerplate code--------------------------------------------
 	
