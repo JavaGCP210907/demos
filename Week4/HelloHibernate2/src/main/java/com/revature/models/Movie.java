@@ -58,6 +58,16 @@ public class Movie {
 	
 	//boilerplate code--------------------------------------------
 	
+	//WE NEED TO MANIPULATE OUR toString to kill the infinite loop
+	//Now, instead of calling a Director object (which has a List of Movies, causing the infinite loop)...
+		//We simply call some fields of the Director object, thus ending the infinite loop
+	@Override
+	public String toString() {
+		return "Movie [id=" + id + ", title=" + title + ", genre=" + genre + ", "
+				+ "director=" + director.getFirstName() + " " + director.getLastName() + "]";
+	}
+	
+	
 	public Movie() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -78,10 +88,6 @@ public class Movie {
 		this.director = director;
 	}
 
-	@Override
-	public String toString() {
-		return "Movie [id=" + id + ", title=" + title + ", genre=" + genre + ", director=" + director + "]";
-	}
 
 	@Override
 	public int hashCode() {

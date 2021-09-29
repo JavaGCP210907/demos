@@ -5,6 +5,7 @@ import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
+import com.revature.daos.DirectorDao;
 import com.revature.daos.MovieDao;
 import com.revature.models.Director;
 import com.revature.models.Movie;
@@ -15,15 +16,14 @@ public class Launcher {
 //CHANGES MADE SINCE THE ORIGINAL HELLOHIBERNATE:
 	//added a field in Director to reference Movie with a OneToMany relationship (for many-to-many functionality)
 		//Thus changing boilerplate code for Director
-	
-	
-	
+	//created the DirectorDao
 	
 	
 	//we're going to use the main method to insert Movies into our DB
 	public static void main(String[] args) {
 		
 		MovieDao mDao = new MovieDao();
+		DirectorDao dDao = new DirectorDao();
 		
 		/*
 		try(Session ses = HibernateUtil.getSession()){
@@ -59,15 +59,20 @@ public class Launcher {
 			System.out.println(m);
 		}
 		
-		//finding movie by id
-		System.out.println(mDao.findMovieById(1));
 		
-		//updating movie
-		m1.setTitle("OOGABOOGABOOGABOOGA");
 		
-		mDao.updateMovie2(m1);
 		
-		System.out.println(mDao.findMovieById(1));
+		
+		
+//		//finding movie by id
+//		System.out.println(mDao.findMovieById(1));
+//		
+//		//updating movie
+//		m1.setTitle("OOGABOOGABOOGABOOGA");
+//		
+//		mDao.updateMovie2(m1);
+//		
+//		System.out.println(mDao.findMovieById(1));
 		
 	}
 
