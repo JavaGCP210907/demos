@@ -56,7 +56,10 @@ public class Launcher {
 		//updating movie
 		m1.setTitle("OOGABOOGABOOGABOOGA");
 		
-		System.out.println(mDao.updateMovie(m1));
+		mDao.updateMovie2(m1);
+		
+		System.out.println(mDao.findMovieById(1));
+		
 	}
 
 }

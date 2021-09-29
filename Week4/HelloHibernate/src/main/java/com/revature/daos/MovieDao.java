@@ -2,7 +2,10 @@ package com.revature.daos;
 
 import java.util.List;
 
+import javax.persistence.Query;
+
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.revature.models.Movie;
 import com.revature.utils.HibernateUtil;
@@ -52,17 +55,43 @@ public class MovieDao {
 		
 	}
 	
+	//Using the session merge() method didn't update the DB... we weren't using a persistent object so it won't take
 	
-	public Movie updateMovie(Movie movie) {
+//	public Movie updateMovie1(Movie movie) {
+//		
+//		Session ses = HibernateUtil.getSession();
+//		Transaction tran = ses.beginTransaction();	
+//	
+//		Movie newMovie = (Movie)ses.merge(movie); //have to cast, since merge() returns type Object
+//		//update would throw an exception if the movie object already existed
+//		//hence why I say merge is less error prone
+//		
+//		return newMovie;
+//	}
+	
+	
+	public void updateMovie2(Movie movie) {
 		
 		Session ses = HibernateUtil.getSession();
+		Transaction tran = ses.beginTransaction(); //update and delete must happen within a transaction
 		
-		return (Movie)ses.merge(movie); //have to cast, since merge() returns type Object
-		//update would throw an exception if the movie object already existed
-		//hence why I say merge is less error prone
+		//updates and deletes take a little more work... You should put the query into a Query object
+		//and then make sure to executeUpdate(), similar to in JDBC.
+		
+		//Assign the Query syntax to a String
+		String HQL = "UPDATE Movie SET title = '" + movie.getTitle() + "' WHERE id = " + movie.getId();
+		
+		//Instantiate a Query object with createQuery()
+		Query q = ses.createQuery(HQL);
+		
+		//Send the update to the DB just like JDBC
+		q.executeUpdate();
+		
+		//close transaction and session to prevent memory leak
+		tran.commit();
+		HibernateUtil.closeSession();
 		
 	}
-	
 	
 	
 }
