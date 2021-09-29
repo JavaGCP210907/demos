@@ -17,6 +17,12 @@ public class Launcher {
 	//added a field in Director to reference Movie with a OneToMany relationship (for many-to-many functionality)
 		//Thus changing boilerplate code for Director
 	//created the DirectorDao
+	//fixed the infinite loop by changing the Movie Class's toString
+	//did some more experiments in the Launcher
+	//hbm2ddl.auto changed to update
+	
+	//Ben will figure out how to hide database credentials in environment variables
+	
 	
 	
 	//we're going to use the main method to insert Movies into our DB
@@ -60,9 +66,15 @@ public class Launcher {
 		}
 		
 		
+		Movie m4 = new Movie("Django Unchained", "Drama", d2);
 		
+		mDao.insertMovie(m4);
 		
+		List<Director> allDirectors = dDao.findAllDirectors();
 		
+		for(Director d : allDirectors) {
+			System.out.println(d);
+		}
 		
 //		//finding movie by id
 //		System.out.println(mDao.findMovieById(1));

@@ -22,8 +22,9 @@
 		<property name="hibernate.format_sql">true</property>
 		
 		<!-- DDL -->
-		<property name="hibernate.hbm2ddl.auto">create</property>
-		<!-- Anyone remember what setting our hbm2ddl.auto to create will do? -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- Now that hbm2ddl.auto is set to update, tables don't drop when the application runs -->
+		
 		
 		<!-- We need to map our Classes in order for them to be recognized by Hibernate -->
 		<mapping class="com.revature.models.Movie"/>
