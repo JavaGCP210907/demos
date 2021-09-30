@@ -1,5 +1,7 @@
 package com.revature;
 
+import com.revature.factory.Cookie;
+import com.revature.factory.CookieFactory;
 import com.revature.singleton.Singleton;
 
 public class Launcher {
@@ -43,7 +45,20 @@ public class Launcher {
 		
 		System.out.println("==============================(Factories)");
 		
+		//Instantiate a CookieFactory to use its getCookie method
+		CookieFactory cf = new CookieFactory();
 		
+		//use the getCookie method of the CookieFactory to get new Objects of type Cookie
+		Cookie cookie1 = cf.getCookie("NoBake");
+		Cookie cookie2 = cf.getCookie("OatmealRaisin");
+		Cookie cookie3 = cf.getCookie("PeanutButter");
+		
+		//use the method in each new Cookie object, notice how they're all of their respective Cookie types
+		cookie1.getBaked();
+		cookie2.getBaked();
+		cookie3.getBaked();
+		
+		//Thanks to the power of abstraction (Factory Design Pattern) Making Cookie objects is way cleaner!
 		
 	}
 
