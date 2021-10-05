@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosHomeComponent implements OnInit {
 
+  hiddenToggle:boolean = true;
+
   todo1 = {
     id:1,
     content: "Wake Up",
@@ -29,7 +31,11 @@ export class TodosHomeComponent implements OnInit {
 //We'll be calling from this in our HTML with String Interpolation
 todosArray = [this.todo1, this.todo2, this.todo3];
 
-
+//this function changes hiddenToggle back and forth between true/false
+//we'll be calling this in our HTML with event binding
+toggleVisibility(){
+  this.hiddenToggle = !this.hiddenToggle; //setting the boolean to the opposite of itself
+}
 
 
 

@@ -14,3 +14,9 @@
     width: 15em;
     margin-left: 2.2em;
 }
+
+button {
+    background-color:burlywood;
+    color: black;
+    border-radius: .5em;
+}

@@ -1,6 +1,8 @@
 img {
     width: 8em;
-    padding: 2em;
+    border-style: dotted;
+    border-radius: 1em;
+    margin: 1em;
 }
 
 header {
