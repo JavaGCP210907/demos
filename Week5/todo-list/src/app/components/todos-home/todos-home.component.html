@@ -1,30 +1,30 @@
+<!-- *ngIf is a structural directive! It will change DOM structure based on a boolean -->
+<!-- *ngIf true, render the element, *ngIf false, don't render the element -->
+<div *ngIf = "greeterDiv">
+    <label for="yourName">What's your name?</label>
+    <!--Two way binding to assign the user input to this "name" variable in the TS-->
+    <input type="text" id="yourName" [(ngModel)] = "name"/>
+    <!--Event binding to perform the submitName() function after a button click-->
+    <button (click)="submitName()">Submit!</button>
+</div>
+
+<!--If the name variable is empty, it'll evaluate to false (empty string is falsey)-->
+<!-- But as soon as the user enters something in the 2 way binding above, it will populate-->
+<h2 *ngIf = "name">Welcome, {{name}}</h2>
+
+
 <div class="grid-container">
 
     <!-- Property binding! binding an HTML attribute(property) to a TS variable's value-->
-    <div class="todo-card" [hidden]="hiddenToggle">
+    <!-- *ngFor is a structural directive that renders HTML for every object in an array-->
+    <div *ngFor = "let todo of todosArray" class="todo-card" [hidden]="hiddenToggle">
         <!-- String Interpolation Taking TS values and putting them in our HTML as text-->
-        <h2>Todo #{{todosArray[0].id}}</h2>
-        <p>Task: {{todosArray[0].content}}</p>
-        <p>Status: {{todosArray[0].status}}</p>
-        <label for="updateBox{{todo1.id}}">Update Tasks</label>
-        <input id="updateBox{{todo1.id}}" [(ngModel)]="todo1.content"/>
-    </div>
-
-    <div class="todo-card" [hidden]="hiddenToggle">
-        <h2>Todo #{{todosArray[1].id}}</h2>
-        <p>Task: {{todosArray[1].content}}</p>
-        <p>Status: {{todosArray[1].status}}</p>
-        <label for="updateBox{{todo2.id}}">Update Tasks</label>
-        <input id="updateBox{{todo2.id}}" [(ngModel)]="todo2.content"/>
-    </div>
-
-    <div class="todo-card" [hidden]="hiddenToggle">
-        <h2>Todo #{{todosArray[2].id}}</h2>
-        <p>Task: {{todosArray[2].content}}</p>
-        <p>Status: {{todosArray[2].status}}</p>
-        <label for="updateBox{{todo3.id}}">Update Tasks</label>
-        <input id="updateBox{{todo3.id}}" [(ngModel)]="todo3.content"/>
-    </div>
+        <h2>Todo #{{todo.id}}</h2>
+        <p>Task: {{todo.content}}</p>
+        <p>Status: {{todo.status}}</p>
+        <label for="updateBox{{todo.id}}">Update Tasks</label>
+        <input id="updateBox{{todo.id}}" [(ngModel)]="todo.content"/>
+    </div>    
 </div>
 
 <br>
