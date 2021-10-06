@@ -1,0 +1,7 @@
+<div class="row">
+    <!--Two way binding this input field to a variable called input in pokedex.component.ts-->
+    <input class="col" type="number" [(ngModel)]="input"/>
+    <!--Event binding on this button to call the getPoke() function in pokedex.component.ts-->
+    <button class="btn btn-dark" (click)="getPoke()">Choose your Pokemon</button>
+</div>
+
