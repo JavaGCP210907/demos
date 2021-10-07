@@ -17,9 +17,10 @@
     <!-- This data will be based on the Pokemon observable we get -->
     <tbody>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <!-- String interpolating the values of the pokemon object -->
+            <td>{{pokemon.name}}</td>
+            <td>{{pokemon.types[0].type.name}}</td>
+            <td><img src={{pokemon.sprites.front_shiny}}></td>
         </tr>
     </tbody>
 </table>

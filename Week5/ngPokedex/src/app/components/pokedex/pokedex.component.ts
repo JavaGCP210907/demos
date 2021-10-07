@@ -13,7 +13,7 @@ export class PokedexComponent implements OnInit {
   public input:number = 0; 
 
   //This pokemon object will be populated by the observable we get from the PokeAPI
-  public pokemon:Pokemon = null; //left it of "any" type, but it will get populated with a Pokemon
+  public pokemon:any = null; //left it of "any" type, but it will get populated with a Pokemon
 
   //dependency injection so that we can use the getPokeFromApi function of the service
   constructor(private ps:PokemonService) { }
