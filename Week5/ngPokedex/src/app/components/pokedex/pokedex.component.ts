@@ -15,6 +15,8 @@ export class PokedexComponent implements OnInit {
   //This pokemon object will be populated by the observable we get from the PokeAPI
   public pokemon:any = null; //left it of "any" type, but it will get populated with a Pokemon
 
+  public spriteArray:any = null;
+
   //dependency injection so that we can use the getPokeFromApi function of the service
   constructor(private ps:PokemonService) { }
 
@@ -27,10 +29,13 @@ export class PokedexComponent implements OnInit {
   getPoke():void {
     this.ps.getPokemonFromApi(this.input).subscribe(
         //get the data out of the observable we subscribed to, and putting it in a Pokemon object
-        (data:Pokemon) => {
+        (data:any) => {
            //assign it to our pokemon variable above
            this.pokemon = data;
+           this.pokemon.sprite = data.sprites.front_default; //we'll have a function that toggles front/back
+           this.spriteArray = data.sprites;
            console.log(this.pokemon); //log the details of our pokemon
+           
         },
         () => { //in case of errors, set pokemon to null, since we didn't get anything back
           this.pokemon = null;
@@ -40,6 +45,16 @@ export class PokedexComponent implements OnInit {
     )
   }
 
+  getPokeBack() {
+    this.pokemon.sprite = this.pokemon.sprites.back_default;
+  }
 
+  toggleSprite() {
+    if(this.pokemon.sprite == this.pokemon.sprites.front_default) {
+      this.pokemon.sprite = this.pokemon.sprites.back_default
+    } else {
+      this.pokemon.sprite = this.pokemon.sprites.front_default
+    }
+  }
 
 }

@@ -9,13 +9,15 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PokedexComponent } from './components/pokedex/pokedex.component';
 import { FormsModule } from '@angular/forms';
+import { PoketypePipe } from './pipes/poketype.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     NavbarComponent,
-    PokedexComponent
+    PokedexComponent,
+    PoketypePipe
   ],
   imports: [
     BrowserModule,

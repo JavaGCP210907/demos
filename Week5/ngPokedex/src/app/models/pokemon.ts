@@ -5,7 +5,7 @@ export class Pokemon {
     //this constructor will initialize the Pokemon's variables when we create one
     constructor(
         public name:string,
-        public types:object[],
+        public types:object,
         public sprite:object
     ) { }
 }
