@@ -25,7 +25,7 @@
                 <td>{{pokemon.types[0].type.name}}
                 <span *ngIf = "pokemon.types.length > 1">{{pokemon.types[1].type.name | poketype}}</span>
                 </td>
-                <td (click)="toggleSprite()"><input type="image" src={{pokemon.sprite}}></td>
+                <td (click)="getPokeShiny()"><input type="image" src={{pokemon.sprite}}></td>
             </tr>
         </tbody>
     </table>
