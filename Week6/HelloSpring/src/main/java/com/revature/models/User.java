@@ -21,6 +21,11 @@ public class User {
 		this.account = account;
 	}
 
+	//We created this constructor in order to accomplish AutoWiring in our Config Class
+	public User(Account account2) {
+		this.account = account2;
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", account=" + account + "]";

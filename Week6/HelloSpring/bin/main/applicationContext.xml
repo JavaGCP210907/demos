@@ -11,4 +11,23 @@
 
 
 
+
+
+<!-- Below is us declaring and wiring beans in XML (which we usually don't prefer over using @Autowired) -->
+<!-- We still do need the applicationContext though, just to indicate that we're scnnaing for @Autowired) -->
+
+
+<!--  Account Bean --> 
+
+<!-- <bean name="account" class="com.revature.models.Account"></bean> -->
+
+<!--  User Bean --> 
+
+<!-- <bean name="user" class="com.revature.models.User"> -->
+	<!-- The User Class has a Account as one of its fields. So we need to WIRE the account with the property tag--> 
+<!-- 	<property name = "account" ref="account"></property> -->
+	<!-- name is the name of the field in the USer class, ref is the name of the bean --> 
+<!-- </bean> -->
+
+
 </beans>
