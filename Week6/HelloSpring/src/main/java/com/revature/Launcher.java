@@ -45,6 +45,16 @@ public class Launcher {
 		//If we made our User bean "prototype" this would return a new user 
 			//See the commented annotation above the user class for this syntax
 		
+		System.out.println("=======================================(Trying to print beans in the container");
+		
+		//assign a String Array to the result of the getBeanDefinitionName() method
+		String[] beanNames = ac.getBeanDefinitionNames();
+		
+		//then I print em out
+		for (String bean : beanNames) {
+			System.out.println(bean);
+		}
+		
 	}
 	
 }

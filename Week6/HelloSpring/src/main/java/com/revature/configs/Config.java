@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.revature.models.Account;
 import com.revature.models.User;
 
-@Configuration //This is how we specify that a Class is a configuration class for beans
+//@Configuration //This is how we specify that a Class is a configuration class for beans
 public class Config {
 	
 	//commented out because we won't configure/wire our beans this way... 
