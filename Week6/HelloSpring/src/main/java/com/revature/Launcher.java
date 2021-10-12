@@ -2,6 +2,7 @@ package com.revature;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.revature.configs.Config;
@@ -54,6 +55,10 @@ public class Launcher {
 		for (String bean : beanNames) {
 			System.out.println(bean);
 		}
+		
+		((AbstractApplicationContext)ac).close();
+		
+		//closing my ApplicationContext to avoid memory leak^^^
 		
 	}
 	
