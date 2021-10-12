@@ -1,5 +1,8 @@
 package com.revature.models;
 
+import org.springframework.stereotype.Component;
+
+@Component //@Component is the generic annotation for making a Class a Bean, and storing it in the Spring Container
 public class Account {
 
 	private double balance;

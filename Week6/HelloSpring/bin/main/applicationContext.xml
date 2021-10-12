@@ -9,7 +9,9 @@
 <!-- We need the <beans> tag and its configurations in order for this xml to be used for Spring -->
 <!-- You can always looks this up if you need it -->
 
-
+<!-- This is the only thing we need in our applicationContext.xml when using annotation-driven bean declaration -->
+<!-- Because the rest of it will be done with annotations in our model classes -->
+<context:component-scan base-package="com.revature"></context:component-scan>
 
 
 

@@ -29,12 +29,21 @@ public class Launcher {
 		//Now we can give our Bean some values
 		u.setId(1);
 		u.setName("CoolUser");
-		u.getAccount().setBalance(500000000.55);
+		u.getAccount().setBalance(50000.55);
 		u.getAccount().setType("Checking");
 		
 		System.out.println(u);
 		
-		System.out.println("=========================================================");
+		System.out.println("=====================================================(Messing with Scopes)");
+	
+		//Recall bean scopes - Beans are singletons by default
+		User u2 = (User)ac.getBean("user");
+		
+		//Thus, this new User object is the same User object as the previous one, and is assigned the same Account Bean. 
+		System.out.println(u2);
+		
+		//If we made our User bean "prototype" this would return a new user 
+			//See the commented annotation above the user class for this syntax
 		
 	}
 	

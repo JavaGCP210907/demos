@@ -1,10 +1,17 @@
 package com.revature.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component //Stereotype annotation - User is now a Bean
+//@Scope("prototype") //This turns the bean scope from Singleton (default) to prototype
 public class User {
 
 	private int id;
 	private String name;
 	
+	//@Autowired //autowiring beans using FIELD INJECTION (bad practice) (1 of 3 types of dependency injection)
 	private Account account;
 
 	//boilerplate code---------------------------------------------------------------
@@ -22,6 +29,7 @@ public class User {
 	}
 
 	//We created this constructor in order to accomplish AutoWiring in our Config Class
+	@Autowired //autowiring beans using CONSTRUCTOR INJECTION (1 of 3 types of dependency injection)
 	public User(Account account2) {
 		this.account = account2;
 	}
@@ -85,6 +93,7 @@ public class User {
 		return account;
 	}
 
+	//@Autowired //autowiring beans using SETTER INJECTION (1 of 3 types of dependency injection)
 	public void setAccount(Account account) {
 		this.account = account;
 	}
