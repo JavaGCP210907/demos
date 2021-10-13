@@ -149,9 +149,4 @@ public class Avenger {
 		this.powerLevel = powerLevel;
 	}
 
-
-	
-	
-	
-	
 }

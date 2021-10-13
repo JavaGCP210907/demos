@@ -1,0 +1,137 @@
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 10:47:50 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 10:51:12 INFO  LoggingAspect:21 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:04:29 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:06:17 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:06:17 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:06:17 INFO  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing java.lang.ArithmeticException
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:07:50 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:07:50 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:07:50 INFO  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
+2021-10-13 11:08:30 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:08:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:08:31 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:08:31 INFO  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
+java.lang.ArithmeticException: null
+	at com.revature.daos.AvengerDAO.fight(AvengerDAO.java:41) ~[main/:?]
+	at com.revature.daos.AvengerDAO$$FastClassBySpringCGLIB$$bd63e53a.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) [spring-aop-5.3.10.jar:5.3.10]
+	at com.revature.daos.AvengerDAO$$EnhancerBySpringCGLIB$$2ad0613c.fight(<generated>) [main/:?]
+	at com.revature.Launcher.main(Launcher.java:41) [main/:?]
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:09:31 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:09:31 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:09:31 WARN  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
+java.lang.ArithmeticException: null
+	at com.revature.daos.AvengerDAO.fight(AvengerDAO.java:41) ~[main/:?]
+	at com.revature.daos.AvengerDAO$$FastClassBySpringCGLIB$$bd63e53a.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) [spring-aop-5.3.10.jar:5.3.10]
+	at com.revature.daos.AvengerDAO$$EnhancerBySpringCGLIB$$2ad0613c.fight(<generated>) [main/:?]
+	at com.revature.Launcher.main(Launcher.java:41) [main/:?]
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:11:16 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:11:16 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:11:16 WARN  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
+java.lang.ArithmeticException: null
+	at com.revature.daos.AvengerDAO.fight(AvengerDAO.java:41) ~[main/:?]
+	at com.revature.daos.AvengerDAO$$FastClassBySpringCGLIB$$bd63e53a.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) [spring-aop-5.3.10.jar:5.3.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) [spring-aop-5.3.10.jar:5.3.10]
+	at com.revature.daos.AvengerDAO$$EnhancerBySpringCGLIB$$2ad0613c.fight(<generated>) [main/:?]
+	at com.revature.Launcher.main(Launcher.java:43) [main/:?]
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:11:42 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:11:42 WARN  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
