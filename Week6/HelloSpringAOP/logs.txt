@@ -135,3 +135,35 @@ java.lang.ArithmeticException: null
 2021-10-13 11:11:42 INFO  LoggingAspect:23 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
 2021-10-13 11:11:42 INFO  LoggingAspect:32 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
 2021-10-13 11:11:42 WARN  LoggingAspect:37 - com.revature.daos.AvengerDAO@591fd34d invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) throwing class java.lang.ArithmeticException
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:57:09 INFO  LoggingAspect:51 - BeanGuy is about to fight!!
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:57:09 INFO  LoggingAspect:37 - com.revature.daos.AvengerDAO@3068b369 invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 11:57:09 INFO  LoggingAspect:59 - The fight has concluded
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:57:09 INFO  LoggingAspect:51 - BeanGuy is about to fight!!
+2021-10-13 11:57:09 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 11:57:09 WARN  LoggingAspect:55 - BeanGuy I can't let you get close. I'm gonna throw an exception
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=0, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveId(int)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=null, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setAveName(String)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=null, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setFirstName(String)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=null, powerLevel=0] invoked void com.revature.models.Avenger.setLastName(String)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=null, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPower(String)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=0] invoked void com.revature.models.Avenger.setPowerLevel(int)
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.toString()
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 15:39:32 INFO  LoggingAspect:56 - BeanGuy is about to fight!!
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 15:39:32 INFO  LoggingAspect:37 - com.revature.daos.AvengerDAO@3068b369 invoked String com.revature.daos.AvengerDAO.fight(Avenger,String,double) returning BeanGuy attacks a bad guy with It do not matter from 300.0 feet away.
+2021-10-13 15:39:32 INFO  LoggingAspect:64 - The fight has concluded
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 15:39:32 INFO  LoggingAspect:56 - BeanGuy is about to fight!!
+2021-10-13 15:39:32 INFO  LoggingAspect:27 - Avenger [aveId=6, aveName=BeanGuy, power=Indifference, firstName=Ben, lastName=Petruzziello, powerLevel=22222222] invoked String com.revature.models.Avenger.getAveName()
+2021-10-13 15:39:32 WARN  LoggingAspect:60 - BeanGuy I can't let you get close. I'm gonna throw an exception
