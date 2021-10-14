@@ -12,4 +12,6 @@ public class HelloController {
 		return ResponseEntity.status(200).body("Hello Spring Boot! That was easy :)");
 	}
 	
+	
+	
 }
