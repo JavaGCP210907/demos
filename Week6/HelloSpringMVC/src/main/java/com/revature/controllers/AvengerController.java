@@ -15,11 +15,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.daos.AvengerDAO;
 import com.revature.models.Avenger;
 
-@Controller //This stereotype annotation is for Controller Class beans, but in MVC it adds all the MVC functionality too
+@RestController //This combines @Controller and @ResponseBody, so we don't have to write both!
+//@Controller //This stereotype annotation is for Controller Class beans, but in MVC it adds all the MVC functionality too
+//@ResponseBody //Adds the @ResponseBody annotation to every method in the Controller at compile time
 @RequestMapping(value="/avenger") //all requests ending in /avenger will come to this Controller
 @CrossOrigin //This will act as a CORS filter, allowing requests from any origin
 public class AvengerController {
@@ -37,7 +40,7 @@ public class AvengerController {
 	
 	//get all avengers
 	@RequestMapping(method=RequestMethod.GET) //Ensures any GET request to /avenger (which is specified above) goes here
-	@ResponseBody //this makes sure that any data sent back in the body is in JSON format
+	//@ResponseBody //this makes sure that any data sent back in the body is in JSON format
 	public List<Avenger> assemble(){
 		return Arrays.asList(aDAO.getAll());
 	}
