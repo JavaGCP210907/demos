@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.revature.daos.PokemonDAO;
@@ -47,9 +48,17 @@ public class PokemonController {
 		//we use .build() instead of .body() if we don't intent to send data back
 	}
 	
+	
+	@GetMapping(value = "/id/{id}")
+	public ResponseEntity<Pokemon> findById(@PathVariable int id){
+		Pokemon p = pDAO.findById(id).get();
+		return ResponseEntity.ok(p);
+	}
+	
+	
 	//This method calls the custom DAO method we wrote----
 	
-	@GetMapping("/{name}") //the name given as a URL endpoint will be the parameter in this method, hence @PathVariable 
+	@GetMapping(value = "/name/{name}") //the name given as a URL endpoint will be the parameter in this method, hence @PathVariable 
 	public ResponseEntity<List<Pokemon>> findByName(@PathVariable String name) {
 		
 		//Remember - an Optional may or may not have the generic, or it may be null. Avoids NullPointerException
