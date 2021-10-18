@@ -20,6 +20,8 @@ INSERT INTO FLASHCARD (id, question, answer, name, difficulty, topic_id) VALUES
 	2
 );
 
+--This quiz data is no longer being used---------------
+
 INSERT INTO QUIZ (id, grade, name) VALUES
 (
 	1,
