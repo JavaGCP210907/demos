@@ -1,0 +1,21 @@
+server:
+  port: 8082 #this is how we do the port in .yaml
+
+spring:
+  application.name: gateway
+  cloud:
+    gateway:
+      default-filters:
+      - PrefixPath=/ #We'll have an empty context path
+      routes: 
+      #==================I like to put a comment line between my routes to separate them. Routes are the paths to our services
+      - id: flashcard 
+        uri: http://localhost:8080
+        predicates:
+        - Path=/flashcard/** 
+        #So any requests going to localhost:8082/flashcard with ANYTHING after it will hit the gateway, then flashcard_service
+      #==============================
+      - id: quiz 
+        uri: http://localhost:8081
+        predicates:
+        - Path=/quiz/** 
