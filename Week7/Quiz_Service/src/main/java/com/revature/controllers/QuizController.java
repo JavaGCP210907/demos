@@ -76,7 +76,7 @@ public class QuizController {
 		
 		//getForObject() will send a GET request to a specified URL, for a specified object type.
 		//So here, we're sending a GET request to the Flashcard_Service, which will get all our flashcards.
-		List<Flashcard> all = this.restTemplate.getForObject("http://localhost:8080/flashcard", List.class);
+		List<Flashcard> all = this.restTemplate.getForObject("http://localhost:8082/flashcard", List.class);
 		
 		if(all.isEmpty()) {
 			return ResponseEntity.noContent().build();

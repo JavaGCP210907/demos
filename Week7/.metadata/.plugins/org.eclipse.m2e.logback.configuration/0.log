@@ -751,3 +751,4 @@
 2021-10-19 14:29:02,317 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-10-19 14:29:02,320 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-10-19 14:29:02,323 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-19 14:29:02,323 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BenjaminPetruzziello\Documents\Revature\Batches\210907\demos\Week7\Microservices_Demo\QuizApp_Monolith\src\test\resources
